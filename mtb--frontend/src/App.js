@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Home from './Components/Home'
+import NavBar from './Components/NavBar'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import About from './Components/About'
+import Login from './Components/Login'
+import TrailDetail from './Components/TrailDetail'
+import Picture from './Components/Picture'
+import TrailList from './Components/TrailList';
+import Trails from './Components/Trails'
+import TrailForm from './Components/TrailForm'
+// import SignUp from './Components/SignUp'
+import Favorite from './Components/Favorite'
+import FavoriteCard from './Components/FavoriteCard'
+import { createBrowserHistory } from 'history'
+import useHistory from 'react-router-dom';
+import ProfilePage from './Components/ProfilePage'
 
-function App() {
+class App extends Component {
+
+  
+  
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <div>
+     <NavBar />
+     {/* <Favorite /> */}
+     {/* <Login /> */}
+     {/* <TrailList /> */}
+     {/* <Trails /> */}
+     {/* <TrailDetail /> */}
+     <Switch>
+     <Route path = "/trails/:id" component = {TrailDetail}/>
+     {/* <Route path = "/signup" component = {SignUp} /> */}
+     <Route path = "/my-favorite" component = {Favorite} />
+     <Route path = "/about" component = {About} />
+     <Route path = "/login" component = {Login} />
+     <Route path = "/profile" component = {ProfilePage} />
+     <Route path = "/create-trail" component = {TrailForm} />
+     <Route path = "/" component = {Home} />
+     </Switch>
+     </div>
+  )
+}
 }
 
 export default App;

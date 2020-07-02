@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Trail-card {
+  display: inline;
+  background-color: black;
+  background-repeat: no-repeat;
+  outline:black solid thick;
+  margin: 2%; 
   color: white;
+  background-position:100%; 
+  float: left;
+  width: 410px;
+  height: 380px;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  background-color: red;
+  margin-left: 180px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image {
+  
+  height:300px;
+  width:410px;
+}
+
+* {
+     background-color: rgb(236, 228, 200) ; 
+    /* background-image: url("https://149363654.v2.pressablecdn.com/wp-content/uploads/2013/07/teal.gif") */
+}
+
+.bike {
+  height: 600px;
+  width: 1800px;
+}
+
+.bikes {
+  height: 500px;
+  position: absolute;
+    height: 70%;
+    width: 100%;
+  margin: 2%;
+  outline:black solid thick;
+
+}
+
+.search {
+  /* color:black; */
+  margin: 2%;
+  top: 40px;
+}
+
+.label {
+  margin: 7%;
+}
+
+.about {
+  
+  height:800px; 
+  width:1500px
+}
+
+.about-create {
+
+  height:800px; 
+  width:1500px
+
+
+}
+
+.about-image {
+  position: relative;
+
+}
+
+.about-form {
+  position: absolute;
+  bottom: 300px;
+  right: 630px;
+  color:blue;
+
+}
+
+.login-input {
+  position: absolute;
+  bottom: 500px;
+  right: 630px;
+  background-color: white;
+  color: black;
+  /* padding-left: 400px;
+  padding-right: 20px; */
+}
+
+.login-buton {
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+  top: 70px;
+  background-color: white;
+  color:white
+}
+
+.delete {
+  font-size: 2mm;
+  /* text-align: right; */
+ ;
+}
+
+.del {
+  position: relative;
+  margin-left: 330px;
+  top: -20px
+  /* bottom:1% */
+  
+}
+
+.detail-page {
+  height: 400px;
+  width: 500px
+}
+
+.login {
+  background-image: url("https://trek.scene7.com/is/image/TrekBicycleProducts/TKW18_WEB_Marquees_3000x1688_MTB?$responsive-pjpg$&cache=on,on&wid=1920");
+  height:800px; 
+  width:1500px
+}
+
+.sort-trail {
+  margin: 2%;
+
+}
+
+.trail-form {
+  bottom: 1000px;
+  right: 630px;
+  margin: 10%
 }
