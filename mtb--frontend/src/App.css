@@ -1,4 +1,5 @@
 .Trail-card {
+  position: relative;
   display: inline;
   background-color: black;
   background-repeat: no-repeat;
@@ -11,10 +12,34 @@
   height: 380px;
 }
 
-.button {
-  background-color: red;
-  margin-left: 180px;
+.fav-button {
+  position: absolute;
+  bottom: 355px;
+  left: 382px;
+  
 }
+
+.trails-page {
+  background-color: #2F2FA2 ;
+}
+
+.home-page {
+  background-color: #2F2FA2;
+}
+
+
+.button {
+  position: relative;
+  background-color:white;
+  margin-left: 210px;
+  margin-bottom: 200px;
+  font-family: initial;
+}
+
+.button:hover{
+  background-color:blue;
+}
+
 
 .image {
   
@@ -22,22 +47,17 @@
   width:410px;
 }
 
-* {
-     background-color: rgb(236, 228, 200) ; 
-    /* background-image: url("https://149363654.v2.pressablecdn.com/wp-content/uploads/2013/07/teal.gif") */
-}
 
 .bike {
-  height: 600px;
-  width: 1800px;
+  height: 500px;
+  width: 900px;
 }
 
 .bikes {
   height: 500px;
   position: absolute;
-    height: 70%;
-    width: 100%;
-  margin: 2%;
+  height: 70%;
+  width: 100%;
   outline:black solid thick;
 
 }
@@ -71,9 +91,27 @@
 
 }
 
+.about-des{
+  position: absolute;
+  bottom: 500px;
+  margin: 4%;
+  padding-right: 110px;
+  color:white;
+  left: 250px;
+  font-size: 25px
+}
+
+.about-des1 {
+  position: absolute;
+  bottom:450px;
+  font-size: 25px;
+  color:white;
+  left: 500px
+}
+
 .about-form {
   position: absolute;
-  bottom: 300px;
+  bottom: 250px;
   right: 630px;
   color:blue;
 
@@ -81,9 +119,9 @@
 
 .login-input {
   position: absolute;
-  bottom: 500px;
+  bottom: 550px;
   right: 630px;
-  background-color: white;
+  /* background-color: white; */
   color: black;
   /* padding-left: 400px;
   padding-right: 20px; */
@@ -91,11 +129,11 @@
 
 .login-buton {
   position: absolute;
-  bottom: 50px;
+  bottom: 10px;
   right: 60px;
   top: 70px;
-  background-color: white;
-  color:white
+  /* background-color: white; */
+  /* color:white */
 }
 
 .delete {
@@ -113,8 +151,16 @@
 }
 
 .detail-page {
-  height: 400px;
-  width: 500px
+  height: 410px;
+  width: 640px;
+  margin-left:00%
+}
+
+.detailed-text {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-size: 18px;
+  position: relative;
+  margin: 1%
 }
 
 .login {
@@ -124,7 +170,8 @@
 }
 
 .sort-trail {
-  margin: 2%;
+  margin-left: 40%;
+  margin-top: 2%
 
 }
 
@@ -132,4 +179,91 @@
   bottom: 1000px;
   right: 630px;
   margin: 10%
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #2F2FA2;
+  font-size: 20px;
+  height: 60px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  }
+
+ .nav Link {
+    color: white
+  }
+  /* .nav Link {
+  
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      
+  } */
+
+.signup-button {
+  color:white;
+  top: 30px;
+  bottom:30px 
+
+
+}
+
+.detailed-page {
+  background-color: black;
+  height: 800px;
+  width: 1500px;
+  color: white
+}
+
+.profile-page {
+  background-color:black;
+  opacity: 90% ;
+
+  color:white;
+  font-size: 25px;
+  height:800px;
+  font-family: cursive;
+}
+
+.profile-pic {
+ border-radius: 50%;
+ margin-top: 60px
+}
+
+.profile-detail {
+  position: absolute;
+  margin: 1%;
+  bottom: 350px;
+  margin-left: 7%
+}
+.input-group.md-form.form-sm.form-1 input{
+  border: 1px solid #bdbdbd;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.menu-item{
+    width: 120px;
+    height: 30px;
+    border: 1px solid #999;
+    font-size: 18px;
+    color: red;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+
+}
+
+.sort-text {
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white
+}
+
+.sort-search{
+  background-color: #2F2FA2;
 }

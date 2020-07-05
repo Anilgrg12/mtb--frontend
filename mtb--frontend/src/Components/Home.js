@@ -81,7 +81,7 @@ render() {
 let FilteredTrail = this.state.trails.filter(trail => trail.name.toLowerCase().includes (this.state.searchTerm.toLowerCase()))
 let sorted = this.filterTrail(this.state.sortBy)
 return (
-    <div>
+    <div className = "home-page">
         <Picture />
         <div className = "search-sort">
         <SearchBar searchHandler = {this.searchHandler} />
@@ -89,8 +89,8 @@ return (
         <div className = "sort-search">
         <SortTrail type={this.state.sortBy} handleChange={this.sortOption}/>
         {this.state.sortBy
-        ? <TrailList trails={sorted} deleteHandler={this.deleteHandler} history = {this.props.history}/>
-        : <TrailList trails={FilteredTrail} deleteHandler={this.deleteHandler} history = {this.props.history}/>
+        ? <TrailList className = "trails-page" trails={sorted} deleteHandler={this.deleteHandler} history = {this.props.history}/>
+        : <TrailList className = "trails-page" trails={FilteredTrail} deleteHandler={this.deleteHandler} history = {this.props.history}/>
         }
         </div>
 

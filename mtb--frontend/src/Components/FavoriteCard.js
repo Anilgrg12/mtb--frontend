@@ -12,7 +12,13 @@ export default class FavoriteCard extends Component {
            <img className = "image" src = {image_url} />
             Name:{name} <br />
             Difficulty:{difficulty} <br />
-            Distance: {length} <br />
+            Distance: {length} miles <br />
+            {/* Location: {location} <br />
+            Rating: {stars} <br />
+            Description: {description} <br />
+            High: {high} <br />
+            Low: {low} <br />
+            Length = {length} <br /> */}
             <button onClick = {(e) => this.props.deleteHandler(e,this.props.trail.id)} className = "del"> Delete</button>
         </div>
     )

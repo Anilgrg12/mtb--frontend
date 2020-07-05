@@ -14,17 +14,13 @@ export default class TrailForm extends Component{
         difficulty:'',
         stars:'',
         high:'',
+        location:'',
         low:'',
-        image_url:''
+        image_url:'',
+    
      }
 
     handleChanged = (event) => {
-    //     if(event.target.name === 'image_url'){
-    //         this.setState({
-    //             [event.target.name]: event.target.files[0] 
-    //     })
-    // }
-    //     else {
         this.setState({
             [event.target.name]: event.target.value
         })
@@ -35,7 +31,7 @@ export default class TrailForm extends Component{
     handleSubmit = (e) => {
         e.preventDefault();
     
-    fetch("http://localhost:3000/trails", {
+    fetch(TrailURL, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
@@ -50,6 +46,7 @@ export default class TrailForm extends Component{
             high:this.state.high,
             low:this.state.low,
             comment:this.state.comment,
+            location:this.state.location,
             image_url:this.state.image_url
 
 
@@ -63,7 +60,7 @@ export default class TrailForm extends Component{
         )
         
         this.resetForm();
-        alert("Thanks for your contribution. Your Trail has beed added")
+        alert("Thank you for your contribution. Your Trail has beed added")
         this.props.history.push('/')
     }
 
@@ -77,7 +74,8 @@ export default class TrailForm extends Component{
         rating:'',
         high:'',
         low:'',
-        image_url:''
+        image_url:'',
+        location:''
         })
 
     }
@@ -103,6 +101,7 @@ export default class TrailForm extends Component{
             <br />
             Difficulty:
             <select placeholder = "Select difficulty level" value = {this.state.difficulty} name = "difficulty" onChange = {this.handleChanged}>
+            <option></option>
             <option>Easy</option>
             <option>Intermediate</option>
             <option>Hard</option>
@@ -111,6 +110,7 @@ export default class TrailForm extends Component{
             <br />
             Rating:
             <select placeholder = "Enter Rating" value = {this.state.stars} name = "stars" onChange = {this.handleChanged}>
+            <option></option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -120,7 +120,7 @@ export default class TrailForm extends Component{
             <br />
             <br />
             Length:
-            <input type = "integer" name = "length" value = {this.state.length} placeholder = "Enter miles" onChange = {this.handleChanged}/> 
+            <input type = "integer" name = "length" value = {this.state.length} placeholder = "Enter the distance" onChange = {this.handleChanged}/> 
             <br />
             <br />
             Description:
@@ -133,9 +133,12 @@ export default class TrailForm extends Component{
             <br />
             Low:
             <input type="integer" name = "low"value = {this.state.low} placeholder = "Enter Low" onChange = {this.handleChanged}/>
-            </label>
             <br/>
             <br />
+            
+            </label>
+            <br/>
+
             <input type="submit" value="Submit" onSubmit = {this.handleSubmit} />
             </form>
          </div>   

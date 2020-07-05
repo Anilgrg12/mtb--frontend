@@ -35,10 +35,10 @@ class Trails extends Component {
         <img className = "image" src = {image_url} alt = {name}></img>
         Name: {name} <br />
         Difficulty: {difficulty} <br />
-        Length: {length}
+        Length: {length} miles
+        {/* <button className = "delete" onClick = {()=> this.props.deleteHandler(id)}>❌</button> */}
         <button className = "button" onClick = {() => this.props.history.push(`/trails/${id}`)}> Details </button>
-        <button onClick = {this.handleTrail}>💚</button>
-        <button className = "delete" onClick = {()=> this.props.deleteHandler(id)}>❌</button>
+        <button className = "fav-button" onClick = {this.handleTrail}>❤️</button>
 
         </div>
 

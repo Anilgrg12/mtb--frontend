@@ -5,7 +5,7 @@ import TrailDetail from './TrailDetail'
  const TrailList = (props) => {
         // debugger
         return (
-          <div>
+          <div className = "sort-search">
             {props.trails.map(trail => <Trails key ={trail.id} trail={trail} deleteHandler = {props.deleteHandler} handelTrail = {props.handleTrail} history = {props.history} />)}
           </div>
         )

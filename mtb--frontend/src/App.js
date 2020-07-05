@@ -10,12 +10,13 @@ import Picture from './Components/Picture'
 import TrailList from './Components/TrailList';
 import Trails from './Components/Trails'
 import TrailForm from './Components/TrailForm'
-// import SignUp from './Components/SignUp'
+import SignUp from './Components/SignUp'
 import Favorite from './Components/Favorite'
 import FavoriteCard from './Components/FavoriteCard'
 import { createBrowserHistory } from 'history'
 import useHistory from 'react-router-dom';
 import ProfilePage from './Components/ProfilePage'
+import Event from './Components/Event'
 
 class App extends Component {
 
@@ -25,6 +26,7 @@ class App extends Component {
   return (
    <div>
      <NavBar />
+     <Event />
      {/* <Favorite /> */}
      {/* <Login /> */}
      {/* <TrailList /> */}
@@ -32,11 +34,12 @@ class App extends Component {
      {/* <TrailDetail /> */}
      <Switch>
      <Route path = "/trails/:id" component = {TrailDetail}/>
-     {/* <Route path = "/signup" component = {SignUp} /> */}
+     <Route path = "/signup" component = {SignUp} />
      <Route path = "/my-favorite" component = {Favorite} />
      <Route path = "/about" component = {About} />
      <Route path = "/login" component = {Login} />
      <Route path = "/profile" component = {ProfilePage} />
+     <Route path = "/event" component = {Event} />
      <Route path = "/create-trail" component = {TrailForm} />
      <Route path = "/" component = {Home} />
      </Switch>
