@@ -3,7 +3,7 @@
   display: inline;
   background-color: black;
   background-repeat: no-repeat;
-  outline:black solid thick;
+  outline:black solid;
   margin: 2%; 
   color: white;
   background-position:100%; 
@@ -12,10 +12,57 @@
   height: 380px;
 }
 
+.Trail-card-fav {
+  position: relative;
+  display: inline;
+  background-color: black;
+  background-repeat: no-repeat;
+  outline:grey solid;
+  margin: 2%; 
+  color: white;
+  background-position:100%; 
+  float: left;
+  width: 410px;
+  height: 380px;
+}
+
+.Trails-card {
+  position: relative;
+  display: inline;
+  background-color: black;
+  background-repeat: no-repeat;
+  outline:grey solid thick;
+  margin: 2%; 
+  color: white;
+  background-position:100%; 
+  float: left;
+  width: 410px;
+  height: 460px;
+}
+
+.Trail-cards{
+  /* position: relative; */
+  /* display: inline; */
+  /* background-color:blue; */
+  background-repeat: no-repeat;
+  outline:lightgrey;
+  /* margin-top:1%; */
+  /* margin-left: 2%;  */
+  color: black;
+  background-position:100%; 
+  float: left;
+  width: 1500px;
+  height: 500px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  background-color: "rgba(50, 115, 220, 0.3)";
+}
+
 .fav-button {
   position: absolute;
-  bottom: 355px;
-  left: 382px;
+  bottom: 358px;
+  left: 384px;
+  font-size: 11px;
   
 }
 
@@ -24,20 +71,25 @@
 }
 
 .home-page {
-  background-color: #2F2FA2;
+  background-color:black;
 }
 
 
 .button {
   position: relative;
   background-color:white;
-  margin-left: 210px;
+  margin-left: 230px;
   margin-bottom: 200px;
   font-family: initial;
+  font-size: 10px;
 }
 
 .button:hover{
-  background-color:blue;
+  background-color:grey;
+}
+
+.del:hover{
+  background-color: red ;
 }
 
 
@@ -111,8 +163,8 @@
 
 .about-form {
   position: absolute;
-  bottom: 250px;
-  right: 630px;
+  bottom: 50px;
+  right: 750px;
   color:blue;
 
 }
@@ -144,8 +196,10 @@
 
 .del {
   position: relative;
-  margin-left: 330px;
-  top: -20px
+  margin-left: 345px;
+  top: -24px;
+  font-size: 10px;
+  /* onhov */
   /* bottom:1% */
   
 }
@@ -183,7 +237,7 @@
 
 .nav {
   overflow: hidden;
-  background-color: #2F2FA2;
+  background-image:linear-gradient(to bottom right, red, yellow);
   font-size: 20px;
   height: 60px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -192,6 +246,10 @@
 
  .nav Link {
     color: white
+  }
+
+  .nav Link:hover{
+    font-display: black;
   }
   /* .nav Link {
   
@@ -265,5 +323,58 @@
 }
 
 .sort-search{
-  background-color: #2F2FA2;
+  background-color:black;
+}
+
+.input {
+  width:500px
+}
+
+.muji {
+  background-color: black;
+}
+
+.edit-profile {
+  position: absolute;
+  margin-left: 30%;
+  font-size: 15px;
+}
+
+.edit-profile:hover{
+  background-color: red;
+
+}
+
+.form-submit:hover{
+background-color: orangered;
+}
+
+.event-des{
+  margin-left: 40%;
+   background-color:  rgba(50, 115, 220, 0.3)
+}
+
+.contact-form-class{
+  color:black;
+  /* margin-top:5% */
+}
+
+#contact{
+  background-color:lightgrey;
+  height: 800px
+}
+
+.event-button:hover{
+background-color:   rgba(50, 115, 220, 0.3);
+
+}
+
+.event-button {
+  font-size: 15px;
+
+}
+
+.fav-event-del {
+  margin-left: 345px;
+  font-size: 8px
 }

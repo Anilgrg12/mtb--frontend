@@ -28,10 +28,10 @@ class Trails extends Component {
         
         }
     render() {
-        console.log("ghnata",this.props)
+        // console.log("ghnata",this.props)
         const {id, name,difficulty,length,image_url} = this.props.trail
      return (
-        <div className = "Trail-card">
+         <div className = "Trail-card">
         <img className = "image" src = {image_url} alt = {name}></img>
         Name: {name} <br />
         Difficulty: {difficulty} <br />

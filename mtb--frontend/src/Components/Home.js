@@ -45,7 +45,17 @@ filterTrail = (type) => {
       } 
       else if (type === 'stars') {
         sorted = [...this.state.trails].sort((a, b) => a.stars > b.stars ? 1 : -1)
+      }
+      else if (type === 'location') {
+        sorted = [...this.state.trails].sort((a, b) => a.location > b.location ? 1 : -1)
+      }  
+      else if (type === 'high') {
+        sorted = [...this.state.trails].sort((a, b) => a.high > b.high ? 1 : -1)
       } 
+      else if (type === 'low') {
+        sorted = [...this.state.trails].sort((a, b) => a.low > b.low ? 1 : -1)
+      } 
+
     return sorted
   }
 
@@ -65,6 +75,7 @@ filterTrail = (type) => {
   };
 
 componentDidMount(){
+    document.body.style.backgroundColor = " black"
       fetch('http://localhost:3000/trails')
       .then(resp => resp.json())
       .then(trails => {
@@ -89,7 +100,7 @@ return (
         <div className = "sort-search">
         <SortTrail type={this.state.sortBy} handleChange={this.sortOption}/>
         {this.state.sortBy
-        ? <TrailList className = "trails-page" trails={sorted} deleteHandler={this.deleteHandler} history = {this.props.history}/>
+        ? <TrailList style = {{backgroundColor:"blue"}} trails={sorted} deleteHandler={this.deleteHandler} history = {this.props.history}/>
         : <TrailList className = "trails-page" trails={FilteredTrail} deleteHandler={this.deleteHandler} history = {this.props.history}/>
         }
         </div>

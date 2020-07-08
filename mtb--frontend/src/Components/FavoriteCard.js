@@ -8,7 +8,7 @@ export default class FavoriteCard extends Component {
         console.log(this.props)
         const {image_url,name,difficulty,length,location,rating,stars,high,low,description,id} = this.props.trail
      return (
-        <div className = "Trail-card">
+        <div className = "Trail-card-fav">
            <img className = "image" src = {image_url} />
             Name:{name} <br />
             Difficulty:{difficulty} <br />

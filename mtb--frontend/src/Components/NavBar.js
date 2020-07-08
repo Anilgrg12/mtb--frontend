@@ -11,14 +11,16 @@ const NavBar = () => {
   return (
             
           <div className = "nav">
-          <Link to="/" style = {{marginRight:136, color: "white",marginTop: 12}} >MTB🚵🏾‍♂️</Link>
-          <Link to="/about" style = {{marginRight:136, color:"white",marginTop: 12}}>About</Link>
-          <Link to="/create-trail" style = {{marginRight:136, color:"white",marginTop: 12}}>Add Trial</Link>
-          <Link to="/my-favorite" style = {{marginRight:136, color:"white",marginTop: 12}}>My Favorites</Link>
-          {/* <Link to="/SignUp" style = {{marginRight:136, color:"white"}}>Sign Up</Link> */}
-          <Link to="event" style = {{marginRight:136, color:"white",marginTop: 12}}>Events</Link>
-          <Link to="/profile" style = {{marginRight:136, color:"white",marginTop: 12}}>Profile</Link>
-          <Link to="/login" style = {{marginRight:136, color:"white",marginTop: 12}}>Log In</Link>
+          <Link to="/" style = {{marginRight:80, color: "white",marginTop: 12}} >MTB🚵🏾‍♂️</Link>
+          <Link to="/about" style = {{marginRight:80, color:"white",marginTop: 12}}>About</Link>
+          <Link to="/create-trail" style = {{marginRight:80, color:"white",marginTop: 12}}>Add Trial</Link>
+          <Link to="/my-favorite" style = {{marginRight:80, color:"white",marginTop: 12}}>My Favorites</Link>
+          {/* <Link to="/SignUp" style = {{marginRight:80, color:"white"}}>Sign Up</Link> */}
+          <Link to="event" style = {{marginRight:80, color:"white",marginTop: 12}}>Events</Link>
+          <Link to="/my-event" style = {{marginRight:80, color:"white",marginTop: 12}}>My Events</Link>
+          <Link to="/profile" style = {{marginRight:80, color:"white",marginTop: 12}}>Profile</Link>
+          <Link to="/contact" style = {{marginRight:80, color:"white",marginTop: 12}}>Contact Us</Link>
+          <Link to="/login" style = {{marginRight:80, color:"white",marginTop: 12}}>Log Out</Link>
           <br />
           </div>
           )

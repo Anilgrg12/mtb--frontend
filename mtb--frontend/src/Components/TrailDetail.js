@@ -84,16 +84,16 @@ export default class TrailDetail extends Component {
                                       </Carousel.Item  >  
                                             <Carousel.Item >  
                                                  <img style={{"height":"410px","width":"595px"}}  
-                                                    src="https://images.unsplash.com/photo-1548422392-679e1fc2eba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1984&q=80"/>  
+                                                    src="https://upload.wikimedia.org/wikipedia/commons/5/5d/A283%2C_Slickrock_Bike_Trail%2C_Moab%2C_Utah%2C_USA%2C_2008.JPG"/>  
                                             </Carousel.Item>  
                                     <Carousel.Item >  
                                         <img style={{'height':"410px","width":"595px"}}  
-                                            src="https://img.redbull.com/images/c_fill,g_auto,w_1500,h_1000/q_auto,f_auto/redbullcom/2016/02/16/1331777047411_1/a-pair-of-mountain-bikers-riding-in-the-dolomites-range-in-north-eastern-italy"  />  
+                                            src="https://www.sltrib.com/resizer/2TGDMZ7lVVVmGTGX_x5YqtnI8ro=/0x600/smart/filters:quality(86)/arc-anglerfish-arc2-prod-sltrib.s3.amazonaws.com/public/GMCO35FYKVFT5LT7V62VRTYUQM.jpg"  />  
                                     </Carousel.Item>  
                                 </Carousel>  
                 </div>
               <ReactPlayer 
-              url = "https://www.youtube.com/watch?v=kzsK8_N5hHs"/>
+              url = "https://www.youtube.com/watch?v=C3C71RzBgu4"/>
               </td>
               <td className = "detailed-text">
               <div>Name: {name}</div> 

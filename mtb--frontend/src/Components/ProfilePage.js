@@ -23,6 +23,7 @@ export default class ProfilePage extends Component {
                              <td>
                                  <div>
                                         <img className= "profile-pic" src = {this.state.user.image} /> <br /> 
+                                         <button className="edit-profile">Edit</button>
                                   </div> 
                              </td> 
                                          <td> 

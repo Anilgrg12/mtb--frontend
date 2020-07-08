@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Form, Button} from 'react-bootstrap'
 const headers = {
     "Content-Type": "application/json",
     Accept: "application/json",
@@ -42,12 +43,32 @@ export default class SignUp extends Component {
         return (
             <div>
                 <form onSubmit = {this.SignUp}> 
-                   Name: <input name="name" placeholder="Name" value={name} onChange={this.handleChange}/> <br />              
-                   Username: <input name="username" placeholder="Username" value={username} onChange={this.handleChange}/> <br />
-                   Email: <input name="email" placeholder="email" value={email} onChange={this.handleChange}/> <br />
-                   password_digest: <input name="password_digest" placeholder="password_digest" type="password" value={password_digest} onChange={this.handleChange} /> <br />               
-                   Image: <input name="image" placeholder="image" src={image} onChange={this.handleChange}/>  <br />
-                   <button >SignUp</button> 
+                <div class="form-group">
+                     <label for="inputdefault">Name</label>
+                         <input className ="form-control" id="inputdefault" name="name" type="text" placeholder="Name" value={name} onChange={this.handleChange} />
+                  </div>
+
+                  <div class="form-group">
+                     <label for="inputdefault">Username</label>
+                         <input className ="form-control" id="inputdefault" name="username" type="text" placeholder="Username" value={username} onChange={this.handleChange} />
+                  </div>
+
+                  <div class="form-group">
+                     <label for="inputdefault">Email</label>
+                         <input className ="form-control" id="inputdefault" name="email" type="text" placeholder="Email" value={email} onChange={this.handleChange} />
+                  </div>
+
+                  <div class="form-group">
+                     <label for="inputdefault">Password</label>
+                         <input className ="form-control" id="inputdefault" name="password_digest" type="password" placeholder="Password" value={password_digest} onChange={this.handleChange} />
+                  </div>
+                  <div class="form-group">
+                     <label for="inputdefault">Image</label>
+                         <input className ="form-control" id="inputdefault" name="image" placeholder="image url" src={image} onChange={this.handleChange} />
+                  </div>
+                  <Button variant="primary" type="submit">
+                                                  Submit
+                                                        </Button> 
                 </form>        
             </div>
         )

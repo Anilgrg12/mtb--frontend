@@ -17,6 +17,9 @@ import { createBrowserHistory } from 'history'
 import useHistory from 'react-router-dom';
 import ProfilePage from './Components/ProfilePage'
 import Event from './Components/Event'
+import DisplayEvent from './Components/DisplayEvent'
+import MyEvent from './Components/MyEvent';
+import Contact from './Components/Contact'
 
 class App extends Component {
 
@@ -26,7 +29,8 @@ class App extends Component {
   return (
    <div>
      <NavBar />
-     <Event />
+     {/* <MyEvent /> */}
+     {/* <Event /> */}
      {/* <Favorite /> */}
      {/* <Login /> */}
      {/* <TrailList /> */}
@@ -40,6 +44,9 @@ class App extends Component {
      <Route path = "/login" component = {Login} />
      <Route path = "/profile" component = {ProfilePage} />
      <Route path = "/event" component = {Event} />
+     <Route path = "/my-event" component = {MyEvent} />
+     <Route path = "/contact" component = {Contact} />
+
      <Route path = "/create-trail" component = {TrailForm} />
      <Route path = "/" component = {Home} />
      </Switch>

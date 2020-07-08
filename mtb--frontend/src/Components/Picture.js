@@ -16,7 +16,7 @@ const Picture = () => {
     //    </Carousel>
     //     </div>
     <div >  
-        <Carousel interval={1500} keyboard={false} pauseOnHover={true}>  
+        <Carousel interval={1000} keyboard={false}>  
             <Carousel.Item  >  
                 <img style={{"height":"600px","width":"1500px"}}  
                     src= "https://images.singletracks.com/blog/wp-content/uploads/2017/09/NSJ7i5Y6BM0p9NSH5PieCxAiaoLrKpaNPQ-1.jpg"  />                            
