@@ -13,7 +13,7 @@ const NavBar = () => {
           <div className = "nav">
           <Link to="/" style = {{marginRight:80, color: "white",marginTop: 12}} >MTB🚵🏾‍♂️</Link>
           <Link to="/about" style = {{marginRight:80, color:"white",marginTop: 12}}>About</Link>
-          <Link to="/create-trail" style = {{marginRight:80, color:"white",marginTop: 12}}>Add Trial</Link>
+          <Link to="/create-trail" style = {{marginRight:80, color:"white",marginTop: 12}}>Add Trail</Link>
           <Link to="/my-favorite" style = {{marginRight:80, color:"white",marginTop: 12}}>My Favorites</Link>
           {/* <Link to="/SignUp" style = {{marginRight:80, color:"white"}}>Sign Up</Link> */}
           <Link to="event" style = {{marginRight:80, color:"white",marginTop: 12}}>Events</Link>

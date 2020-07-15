@@ -61,7 +61,7 @@ export default class TrailForm extends Component{
         )
         
         this.resetForm();
-        alert("Thank you for your contribution. Your trail has beed added")
+        // alert("Thank you for your contribution. Your trail has beed added")
         this.props.history.push('/')
     }
 

@@ -29,7 +29,7 @@ export default class Contact extends Component {
                      emailTitle: '',
                      emailDetails:''
                  })
-                  alert("Thank You. We will get back to you as soon as possible")
+                //   alert("Thank You. We will get back to you as soon as possible")
              
             }
         

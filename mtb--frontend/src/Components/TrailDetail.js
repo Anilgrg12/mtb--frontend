@@ -77,44 +77,56 @@ export default class TrailDetail extends Component {
                          <tr>
                              <td>
                                 <div> 
-                                 <Carousel>  
+                                 <Carousel >  
                                      <Carousel.Item>  
-                                            <img style={{"height":"410px","width":"595px"}}  
+                                            <img style={{"height":"410px","width":"600px"}}  
                                                  src={image_url} />
                                       </Carousel.Item  >  
                                             <Carousel.Item >  
-                                                 <img style={{"height":"410px","width":"595px"}}  
-                                                    src="https://upload.wikimedia.org/wikipedia/commons/5/5d/A283%2C_Slickrock_Bike_Trail%2C_Moab%2C_Utah%2C_USA%2C_2008.JPG"/>  
+                                                 <img style={{"height":"410px","width":"600px"}}  
+                                                    src="https://cdn2.apstatic.com/photos/mtb/7020598_medium_1554927540.jpg"/>  
                                             </Carousel.Item>  
                                     <Carousel.Item >  
-                                        <img style={{'height':"410px","width":"595px"}}  
-                                            src="https://www.sltrib.com/resizer/2TGDMZ7lVVVmGTGX_x5YqtnI8ro=/0x600/smart/filters:quality(86)/arc-anglerfish-arc2-prod-sltrib.s3.amazonaws.com/public/GMCO35FYKVFT5LT7V62VRTYUQM.jpg"  />  
+                                        <img style={{'height':"410px","width":"600px"}}  
+                                            src="https://cdn2.apstatic.com/photos/mtb/7005240_medium_1554822697.jpg"  />  
+                                    </Carousel.Item>  
+
+                                    <Carousel.Item >  
+                                        <img style={{'height':"410px","width":"600px"}}  
+                                            src="https://cdn2.apstatic.com/photos/mtb/7013398_medium_1554845747.jpg"  />  
                                     </Carousel.Item>  
                                 </Carousel>  
                 </div>
-              <ReactPlayer 
-              url = "https://www.youtube.com/watch?v=C3C71RzBgu4"/>
+                <div className = "player">
+              <ReactPlayer width={600}
+              url = "https://www.youtube.com/watch?v=cjnleymxcUk&t=3s"/>
+              </div>
               </td>
+              <div>
               <td className = "detailed-text">
               <div>Name: {name}</div> 
               <div>Difficulty: {difficulty}</div>
-              <div>Description: {description} </div>
+              <div className="detail-description">Description: {description} </div>
               <div>Elevation: <br />
                   High: {high} <br/>
                   Low: {low}
               </div>
-              <div>Location: {location} </div>
+              <div>State: {location} </div>
+              <div>Address: 200-298 W 3rd St, Salida, CO 81201</div>
               <div>Rating: {stars}</div>
+             
               {/* <div>Reviews: {comment}</div> */}
              <div>Reviews: </div>
               {this.state.reviews.map(review => <div>-{review.opinion}</div>)}
              
               Add Reviews:  <input onChange = {this.commentChange} name = "opinion" value={this.state.opinion} placeholder = "Enter review here" />
-              <button onClick = {this.handledSubmit}>Submit</button>
+              <button className = "detail-button" onClick = {this.handledSubmit}>Submit</button>
               </td >
+              </div>
               </tr>
               </table>
           </div>
+          
         )
     }
 
