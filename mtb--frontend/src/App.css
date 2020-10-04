@@ -200,24 +200,12 @@
   margin-left: 345px;
   top: -24px;
   font-size: 10px;
-  /* onhov */
-  /* bottom:1% */
-  
 }
-
-/* .detail-page {
-  height: 510px;
-  width: 500px;
-  margin-left:00%
-} */
-
 
 .detailed-text {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
   font-size: 23px;
   position: relative;
-  /* right: 100px; */
-  /* color:grey; */
   text-align:center;
   margin:2%
 }
@@ -275,23 +263,11 @@
   .nav Link:hover{
     font-display: black;
   }
-  /* .nav Link {
-  
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      
-  } */
 
 .signup-button {
   color:white;
   top: 30px;
   bottom:30px 
-
-
 }
 
 .detailed-page {
@@ -304,7 +280,6 @@
 .profile-page {
   background-color:black;
   opacity: 90% ;
-
   color:white;
   font-size: 25px;
   height:800px;
@@ -383,7 +358,6 @@ background-color: orangered;
 
 .contact-form-class{
   color:black;
-  /* margin-top:5% */
 }
 
 #contact{
