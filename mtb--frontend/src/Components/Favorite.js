@@ -15,7 +15,6 @@ export default class Favorite extends Component {
     componentDidMount() {
         document.body.style.backgroundColor = "black"
         let userId = localStorage.getItem("user_id");
-        //  debugger
        console.log("lado",this.state.myFavs)
         fetch(`http://localhost:3000/users/${userId}/add_trail`)
             .then(resp => resp.json())
@@ -67,7 +66,7 @@ export default class Favorite extends Component {
     //   };
 
     render() {
-        // debugger
+    
         console.log('mujiiii',this.state)
         return (
             <div>

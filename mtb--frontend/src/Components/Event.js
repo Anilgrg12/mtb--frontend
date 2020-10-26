@@ -12,7 +12,7 @@ export default class Event extends Component {
         .then(events => {this.setState({events})})
     }
     render() {
-        // console.log("event",this.state)
+        
         return (
             <div>
                 {this.state.events.map(event => <DisplayEvent  key ={event.id} event = {event}/>)}

@@ -8,7 +8,7 @@ class DisplayEvent extends Component{
         e.preventDefault()
         let user_id = localStorage.getItem("user_id")
         let event_id = this.props.event.id
-        // debugger
+       
 
         fetch("http://localhost:3000/fav_events/", { 
         method: "POST",

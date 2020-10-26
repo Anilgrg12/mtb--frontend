@@ -33,12 +33,6 @@ export default class Contact extends Component {
              
             }
         
-        
-             
-             
-             //  .then()
-             //  .catch();
-        // alert("Thank You. We will get back to you as soon as possible")
    
 
     render() {
