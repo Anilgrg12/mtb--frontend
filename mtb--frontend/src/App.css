@@ -3,25 +3,24 @@
   display: inline;
   background-color: black;
   background-repeat: no-repeat;
-  outline:black solid;
-  margin: 2%; 
+  outline: black solid;
+  margin: 2%;
   color: white;
-  background-position:100%; 
+  background-position: 100%;
   float: left;
   width: 410px;
   height: 380px;
 }
 
 .Trail-card-fav {
-  
   position: relative;
   display: inline;
   background-color: black;
   background-repeat: no-repeat;
-  outline:grey solid;
-  margin: 2%; 
+  outline: grey solid;
+  margin: 2%;
   color: white;
-  background-position:100%; 
+  background-position: 100%;
   float: left;
   width: 410px;
   height: 380px;
@@ -32,29 +31,27 @@
   display: inline;
   background-color: black;
   background-repeat: no-repeat;
-  outline:grey solid thick;
-  margin: 2%; 
+  outline: grey solid thick;
+  margin: 2%;
   color: white;
-  background-position:100%; 
+  background-position: 100%;
   float: left;
   width: 410px;
   height: 480px;
 }
 
-.Trail-cards{
+.Trail-cards {
   /* position: relative; */
   /* display: inline; */
   /* background-color:blue; */
   background-repeat: no-repeat;
-  outline:lightgrey;
-  /* margin-top:1%; */
-  /* margin-left: 2%;  */
+  outline: lightgrey;
   color: black;
-  background-position:100%; 
+  background-position: 100%;
   float: left;
   width: 1500px;
   height: 500px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 22px;
   background-color: "rgba(50, 115, 220, 0.3)";
 }
@@ -64,42 +61,37 @@
   bottom: 358px;
   left: 384px;
   font-size: 11px;
-  
 }
 
 .trails-page {
-  background-color: #2F2FA2 ;
+  background-color: #2f2fa2;
 }
 
 .home-page {
-  background-color:black;
+  background-color: black;
 }
-
 
 .button {
   position: relative;
-  background-color:white;
+  background-color: white;
   margin-left: 230px;
   margin-bottom: 200px;
   font-family: initial;
   font-size: 10px;
 }
 
-.button:hover{
-  background-color:grey;
+.button:hover {
+  background-color: grey;
 }
 
-.del:hover{
-  background-color: red ;
+.del:hover {
+  background-color: red;
 }
-
 
 .image {
-  
-  height:300px;
-  width:410px;
+  height: 300px;
+  width: 410px;
 }
-
 
 .bike {
   height: 500px;
@@ -111,12 +103,10 @@
   position: absolute;
   height: 70%;
   width: 100%;
-  outline:black solid thick;
-
+  outline: black solid thick;
 }
 
 .search {
-  /* color:black; */
   margin: 2%;
   top: 40px;
 }
@@ -126,48 +116,42 @@
 }
 
 .about {
-  
-  height:800px; 
-  width:1500px
+  height: 800px;
+  width: 1500px;
 }
 
 .about-create {
-
-  height:800px; 
-  width:1500px
-
-
+  height: 800px;
+  width: 1500px;
 }
 
 .about-image {
   position: relative;
-
 }
 
-.about-des{
+.about-des {
   position: absolute;
   bottom: 500px;
   margin: 4%;
   padding-right: 110px;
-  color:white;
+  color: white;
   left: 250px;
-  font-size: 25px
+  font-size: 25px;
 }
 
 .about-des1 {
   position: absolute;
-  bottom:450px;
+  bottom: 450px;
   font-size: 25px;
-  color:white;
-  left: 500px
+  color: white;
+  left: 500px;
 }
 
 .about-form {
   position: absolute;
   bottom: 50px;
   right: 750px;
-  color:blue;
-
+  color: blue;
 }
 
 .login-input {
@@ -185,14 +169,11 @@
   bottom: 10px;
   right: 60px;
   top: 70px;
-  /* background-color: white; */
-  /* color:white */
 }
 
 .delete {
   font-size: 2mm;
   /* text-align: right; */
- ;
 }
 
 .del {
@@ -203,137 +184,140 @@
 }
 
 .detailed-text {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 23px;
   position: relative;
-  text-align:center;
-  margin:2%
+  text-align: center;
+  margin: 2%;
 }
 
 .detailed-text {
-  animation: color-change 20s infinite ;
+  animation: color-change 20s infinite;
 }
 
 @keyframes color-change {
-  0% { color: red; }
-  50% { color: blue; }
-  100% { color:white; }
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: white;
+  }
 }
 
-.player{
-  width: 20%
+.player {
+  width: 20%;
 }
 
-.detail-button:hover{
+.detail-button:hover {
   background-color: blue;
 }
 
-
 .login {
   background-image: url("https://trek.scene7.com/is/image/TrekBicycleProducts/TKW18_WEB_Marquees_3000x1688_MTB?$responsive-pjpg$&cache=on,on&wid=1920");
-  height:800px; 
-  width:1500px
+  height: 800px;
+  width: 1500px;
 }
 
 .sort-trail {
   margin-left: 40%;
-  margin-top: 2%
-
+  margin-top: 2%;
 }
 
 .trail-form {
   bottom: 1000px;
   right: 630px;
-  margin: 10%
+  margin: 10%;
 }
 
 .nav {
   overflow: hidden;
-  background-image:linear-gradient(to bottom right, red, yellow);
+  background-image: linear-gradient(to bottom right, red, yellow);
   font-size: 20px;
   height: 60px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: white;
-  }
+}
 
- .nav Link {
-    color: white
-  }
+.nav Link {
+  color: white;
+}
 
-  .nav Link:hover{
-    font-display: black;
-  }
+.nav Link:hover {
+  font-display: black;
+}
 
 .signup-button {
-  color:white;
+  color: white;
   top: 30px;
-  bottom:30px 
+  bottom: 30px;
 }
 
 .detailed-page {
   background-color: black;
   height: 800px;
   width: 1500px;
-  color: white
+  color: white;
 }
 
 .profile-page {
-  background-color:black;
-  opacity: 90% ;
-  color:white;
+  background-color: black;
+  opacity: 90%;
+  color: white;
   font-size: 25px;
-  height:800px;
+  height: 800px;
   font-family: cursive;
 }
 
 .profile-pic {
- border-radius: 50%;
- margin-top: 60px;
- height: 400px;
- width: 600px
+  border-radius: 50%;
+  margin-top: 60px;
+  height: 400px;
+  width: 600px;
 }
 
 .profile-detail {
   position: absolute;
   margin: 1%;
   bottom: 350px;
-  margin-left: 7%
+  margin-left: 7%;
 }
-.input-group.md-form.form-sm.form-1 input{
+.input-group.md-form.form-sm.form-1 input {
   border: 1px solid #bdbdbd;
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
 
-.menu-item{
-    width: 120px;
-    height: 30px;
-    border: 1px solid #999;
-    font-size: 18px;
-    color: red;
-    background-color: #eee;
-    border-radius: 5px;
-    box-shadow: 4px 4px #ccc;
-
+.menu-item {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #999;
+  font-size: 18px;
+  color: red;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 4px 4px #ccc;
 }
 
 .sort-text {
   font-size: 20px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: white
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
 }
 
-.sort-search{
-  background-color:black;
+.sort-search {
+  background-color: black;
 }
 
 .input {
-  width:500px
+  width: 500px;
 }
 
 .muji {
   background-color: black;
-  
 }
 
 .edit-profile {
@@ -342,40 +326,37 @@
   font-size: 15px;
 }
 
-.edit-profile:hover{
+.edit-profile:hover {
   background-color: red;
-
 }
 
-.form-submit:hover{
-background-color: orangered;
+.form-submit:hover {
+  background-color: orangered;
 }
 
-.event-des{
+.event-des {
   margin-left: 40%;
-   background-color:  rgba(50, 115, 220, 0.3)
+  background-color: rgba(50, 115, 220, 0.3);
 }
 
-.contact-form-class{
-  color:black;
+.contact-form-class {
+  color: black;
 }
 
-#contact{
-  background-color:lightgrey;
-  height: 800px
+#contact {
+  background-color: lightgrey;
+  height: 800px;
 }
 
-.event-button:hover{
-background-color:   rgba(50, 115, 220, 0.3);
-
+.event-button:hover {
+  background-color: rgba(50, 115, 220, 0.3);
 }
 
 .event-button {
   font-size: 15px;
-
 }
 
 .fav-event-del {
   margin-left: 345px;
-  font-size: 8px
+  font-size: 8px;
 }
