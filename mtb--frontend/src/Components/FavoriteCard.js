@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 
 export default class FavoriteCard extends Component {
      render(){
-        console.log(this.props)
+        console.log('answer',this.props)
         const {image_url,name,difficulty,length,location,rating,stars,high,low,description,id} = this.props.trail
      return (
         <div className = "Trail-card-fav">

@@ -31,9 +31,9 @@ export default class ProfilePage extends Component {
               <div className="profile-detail">
                 <div> Name: {this.state.user.name} Gurung </div>
                 <div>Age: 25 </div>
-                <div>Username: Anilg</div>
+                <div>Username: {this.state.user.username}</div>
                 <div> Email address: {this.state.user.email}</div>
-                <div>Location: NewYork</div>
+                {/* <div>Location: NewYork</div> */}
                 <div>Short Bio: I Love Mountain Biking!!!!!!!!!! </div>
               </div>
             </td>

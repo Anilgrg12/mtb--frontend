@@ -4,17 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Picture = () => {
   return (
-    //     <div className = "bike">
-    //     <Carousel className = "bikes">
-    //         <Carousel.Item className = "bikes">
-
-    //     <img  className = "bikes" src = "https://images.singletracks.com/blog/wp-content/uploads/2017/09/NSJ7i5Y6BM0p9NSH5PieCxAiaoLrKpaNPQ-1.jpg" />
-    //         </Carousel.Item>
-    //         <Carousel.Item>
-    //     <img classname = "bikes" src = "https://images.singletracks.com/blog/wp-content/uploads/2017/09/NSJ7i5Y6BM0p9NSH5PieCxAiaoLrKpaNPQ-1.jpg" />
-    //         </Carousel.Item>
-    //    </Carousel>
-    //     </div>
     <div>
       <Carousel className="first-page" interval={3000} keyboard={false}>
         <Carousel.Item>
