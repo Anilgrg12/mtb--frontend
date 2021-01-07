@@ -20,7 +20,6 @@ export default class MyEvent extends Component {
   }
 
   render() {
-    // console.log("gedaa", this.state);
     return (
       <div>
         {this.state.myEvents.map((event) => (

@@ -30,7 +30,7 @@ class Login extends Component {
           console.log("erorr");
         } else {
           localStorage.setItem("user_id", resp.id);
-           debugger
+          debugger;
           this.props.history.push("/");
         }
       });

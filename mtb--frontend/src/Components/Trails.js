@@ -21,7 +21,6 @@ class Trails extends Component {
       .then((resp) => console.log(resp));
   };
   render() {
-    // console.log("ghnata",this.props)
     const { id, name, difficulty, length, image_url } = this.props.trail;
     return (
       <div className="Trail-card">

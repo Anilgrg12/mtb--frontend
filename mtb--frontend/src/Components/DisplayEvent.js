@@ -57,32 +57,4 @@ class DisplayEvent extends Component {
   }
 }
 
-// renderFull = () => {
-// const{name,description,date_time,img,city,state,website} = this.props.event
-// return( <div className = "Trail-card">
-
-//     <div>Name of the event: {name} </div>
-//     <div>City: {city}</div>
-//     <div>State: {state}</div>
-//     <div>Date: {date_time}</div>
-//     <div>Website: {website}</div>
-//     <div>Description: {description}</div>
-//     </div>
-
-// )
-
-// }
-// render() {
-//  return  (
-//     // <div onClick={this.toggleClicked}>
-//     <div>
-//        {/* {this.state.clicked? this.renderFull() : this.renderShort()} */}
-//        {this.renderShort()}
-//     </div>
-//     // </div>
-//     )
-// }
-
-// }
-
 export default DisplayEvent;
